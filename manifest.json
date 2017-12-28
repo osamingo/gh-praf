@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "GitHub Pull Request Auto Filler",
+  "description": "Auto Fill labels, assignees, etc.",
+  "version": "0.1",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "GitHub Pull Request Auto Filler"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+  "permissions": [
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
+    "https://github.com/*/compare/*"
+  ]
+}
